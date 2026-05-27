@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nyang Nyang Care - Services &amp; Products</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#0060ac",
+                        "on-surface-variant": "#414751",
+                        "tertiary-fixed-dim": "#a2d584",
+                        "on-surface": "#1f1b18",
+                        "on-tertiary-fixed": "#082100",
+                        "tertiary-fixed": "#bdf19d",
+                        "inverse-surface": "#34302d",
+                        "surface-bright": "#fff8f5",
+                        "primary-fixed-dim": "#a4c9ff",
+                        "on-primary": "#ffffff",
+                        "outline": "#717783",
+                        "background": "#fff8f5",
+                        "on-tertiary-fixed-variant": "#26500f",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#410100",
+                        "tertiary-container": "#52803a",
+                        "on-background": "#1f1b18",
+                        "error-container": "#ffdad6",
+                        "primary": "#005da7",
+                        "on-primary-fixed": "#001c39",
+                        "on-secondary-fixed-variant": "#7e2a1f",
+                        "surface-container": "#f5ece8",
+                        "primary-container": "#2976c7",
+                        "outline-variant": "#c1c7d3",
+                        "primary-fixed": "#d4e3ff",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#efe6e2",
+                        "tertiary": "#3a6723",
+                        "secondary-fixed": "#ffdad4",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#f8ffee",
+                        "on-primary-fixed-variant": "#004883",
+                        "secondary": "#9e4134",
+                        "surface-container-low": "#fbf2ed",
+                        "on-secondary-container": "#752318",
+                        "inverse-on-surface": "#f8efea",
+                        "on-primary-container": "#fdfcff",
+                        "surface-dim": "#e1d8d4",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#ffb4a8",
+                        "surface-variant": "#eae1dc",
+                        "inverse-primary": "#a4c9ff",
+                        "surface": "#fff8f5",
+                        "surface-container-highest": "#eae1dc",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#fd8b79"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "container-max": "1200px",
+                        "margin-desktop": "40px",
+                        "base": "8px",
+                        "stack-sm": "12px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #fff8f5;
+            color: #1f1b18;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .custom-shadow {
+            box-shadow: 0 4px 20px -2px rgba(0, 93, 167, 0.08);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-dim flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-16 sticky top-0 z-50 shadow-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim" style="font-size: 28px;">pets</span>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">Nyang Nyang Care</h1>
+</div>
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-on-surface-variant" style="font-size: 24px;">notifications</span>
+</button>
+</header>
+<main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-stack-md pb-32">
+<!-- Hero Section -->
+<section class="mb-stack-lg animate-fade-in">
+<div class="relative rounded-[32px] overflow-hidden aspect-[16/9] md:aspect-[21/9] group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A serene high-end feline medical facility with soft ambient lighting and cream-colored walls. A calm tabby cat sits gracefully on a white modern table while a professional veterinarian gently prepares for a checkup. The mood is peaceful and professional, featuring a palette of soft blues, peaches, and warm whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPJHT-fXHZg2O-MI_ONQsZfCDQr7_w_qnTLrgtX7N6ewBjpnkqeAR8e4x7mWQWl07uqOVD1suUhGuJzZ-0NvcuGiwjykAxbOdyLJnywlX371ZDO2vJEtBoRhbEAJURko5KpHnIa6YrYJBKgCcW7MTQS2yqJVxG3M7aQZMLoxK0sSwq7_OpSX1ioMdC2M4QC3k41mBVxN18VdgPUPp09ewMq3wXdUrcwSu-3EbZJNWMVPq4nRJuQLYAP25l8FIVgmNrDvT6Ffd8qnI5"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent flex items-center p-8 md:p-16">
+<div class="max-w-md text-white">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4">반려묘의 건강을 위한<br/>전문화된 프리미엄 케어</h2>
+<p class="font-body-md text-white/90 mb-6">전문 의료진이 제공하는 고양이 맞춤형 검진과 엄선된 제품을 만나보세요.</p>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md hover:shadow-lg transition-all active:scale-95">자세히 보기</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Clinical Services -->
+<section class="mb-stack-lg">
+<div class="flex items-end justify-between mb-8">
+<div>
+<span class="text-primary font-label-md uppercase tracking-wider mb-2 block">Our Services</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">클리닉 서비스</h3>
+</div>
+<button class="text-primary font-label-md flex items-center gap-1 hover:underline">
+                    전체보기 <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Vaccination -->
+<div class="bg-white p-8 rounded-[24px] custom-shadow border-l-4 border-primary hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-2xl mb-6">
+<span class="material-symbols-outlined text-primary" style="font-size: 28px;">vaccines</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-2">백신 접종</h4>
+<p class="text-on-surface-variant font-body-md mb-6">기초 예방 접종부터 항체 검사까지, 고양이의 생애 주기에 맞춘 면역 관리.</p>
+<div class="flex items-center text-primary font-label-md cursor-pointer group">
+                        상담 예약 <span class="material-symbols-outlined text-[20px] ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Health Check -->
+<div class="bg-white p-8 rounded-[24px] custom-shadow border-l-4 border-tertiary hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 bg-tertiary-fixed flex items-center justify-center rounded-2xl mb-6">
+<span class="material-symbols-outlined text-tertiary" style="font-size: 28px;">monitor_heart</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-2">정기 종합 검진</h4>
+<p class="text-on-surface-variant font-body-md mb-6">혈액 검사, 초음파, 엑스레이를 포함한 고양이 전문 정밀 진단 시스템.</p>
+<div class="flex items-center text-tertiary font-label-md cursor-pointer group">
+                        검진 안내 <span class="material-symbols-outlined text-[20px] ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Dental Care -->
+<div class="bg-white p-8 rounded-[24px] custom-shadow border-l-4 border-secondary hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 bg-secondary-fixed flex items-center justify-center rounded-2xl mb-6">
+<span class="material-symbols-outlined text-secondary" style="font-size: 28px;">dentistry</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-2">치과 전문 케어</h4>
+<p class="text-on-surface-variant font-body-md mb-6">스케일링부터 구내염 관리까지, 고양이 특유의 구강 질환 집중 치료.</p>
+<div class="flex items-center text-secondary font-label-md cursor-pointer group">
+                        진료 신청 <span class="material-symbols-outlined text-[20px] ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Premium Products -->
+<section class="mb-stack-lg">
+<div class="relative rounded-[32px] overflow-hidden mb-12 h-[300px] flex flex-col justify-center px-8 md:px-16">
+<img alt="Premium Products Banner" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQuViW6i6BapFCzh1UaEk9Y6EvlrgoWtzxquLBmqFd6lQMHC7U71vwi3TuzDmpfp9cGmY1qaBMvWC_4Va70lTRSC5hCMJAfnorw0LYpv4aMD-88oycn5bZJxYWR99JTCIFjU451d8t3Cp1sh2LkL9290hBw2te8j5HjqPC7EqHcdcTXvXve0Ko1ZCmIqaMNwdP5Nd2w-iHNwJ7nHXD2vyDYr1o6jHdNlv7cELUe4bccqMVbI0po59dDFhqMwcdVaFGfCfOV2A2e2N4"/>
+<div class="relative z-10 max-w-lg">
+<h3 class="font-headline-lg text-white mb-2">프리미엄 헬스케어 샵</h3>
+<p class="text-white/80 font-body-md">수의사가 직접 검증하고 추천하는 반려묘 전용 프리미엄 라인업.</p>
+</div>
+<div class="absolute inset-0 bg-black/20"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-gutter">
+<!-- Product 1 -->
+<div class="bg-white rounded-[24px] overflow-hidden custom-shadow group">
+<div class="aspect-square bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close up high-quality studio photography of a designer cat supplement container. The packaging features a clean, minimalist design with pastel colors. The lighting is bright and even, highlighting the premium texture of the material. Soft shadows ground the product against a neutral cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs1D4b0IVviEvAkdnUn3qvqp0jl4Ebjkhu5vSSPXpW4MqT1ppfD0HGgR5ohBtiX3dbXMR91FXG4TdYb8fN7isOoFqFHsrQataDMWjNQ_ZJERzZWK1YjkfYQBRi7gG9EPgALBpXoC_PRxyHkfkqOT_l6UFM89fHLVEPjns4VqtJvQlOpZ9BZSlctKkPSp7LN9IdmCwrcRtmEU6p9GGiALtXvKUirquysccMHR6YCaR7n_MXlT2b-0FPQZA-B-k-9nimiPeDw6behESw"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full text-label-sm">Best</span>
+</div>
+<div class="p-5">
+<p class="text-on-surface-variant text-label-sm mb-1">Nyang Nyang Care</p>
+<h5 class="font-headline-md text-base mb-2">프리미엄 종합 영양제</h5>
+<p class="text-primary font-bold text-lg mb-4">₩45,000</p>
+<button class="w-full bg-surface-container-high text-on-surface py-3 rounded-xl font-label-md flex items-center justify-center gap-2 hover:bg-primary-container hover:text-on-primary-container transition-colors active:scale-95">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+                            장바구니
+                        </button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-white rounded-[24px] overflow-hidden custom-shadow group">
+<div class="aspect-square bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Elegant packaging for organic cat food displayed in a well-lit lifestyle setting. The design is modern and sophisticated, using sage green and soft ivory tones. A few organic ingredients like blueberries and salmon are artistically placed nearby. The atmosphere is healthy and natural." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYSzTcMBvON9UTTeyx50ZK8DEIHoyzXuy3CgX9qoq-N24PXXtqTB-XSP3JcOWtGydDiMSPTpaD9rB3ibiiNnmfgsIGzA54tb9cDi4lNts7ohROFQursBELrzoWPICFmV4sAvF1OB-eWO1AElZIiwdIrxbbZGtqpwGgG1Wb0HVlKzoGHnw613LUIX3H2KBbumVHVPVAdgO5f__1kflY1yzfw1aYrmzJgXEnEJdhjw19j3vRuuXugICEFgvaptc39If1Et68KNd475pz"/>
+</div>
+<div class="p-5">
+<p class="text-on-surface-variant text-label-sm mb-1">Organic Selection</p>
+<h5 class="font-headline-md text-base mb-2">홀리스틱 유기농 사료</h5>
+<p class="text-primary font-bold text-lg mb-4">₩38,000</p>
+<button class="w-full bg-surface-container-high text-on-surface py-3 rounded-xl font-label-md flex items-center justify-center gap-2 hover:bg-primary-container hover:text-on-primary-container transition-colors active:scale-95">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+                            장바구니
+                        </button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-white rounded-[24px] overflow-hidden custom-shadow group">
+<div class="aspect-square bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A collection of high-end, minimalist cat toys made from natural materials like wool, wood, and organic cotton. The toys are arranged on a clean white wooden surface under soft, diffused sunlight. The style is Scandinavian-inspired, focusing on tactile quality and aesthetic simplicity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk9IV9Cx-pnzSC4wRe7ONSIV06issmb8LCwGnzTEno6n3c-DKlds1K77Hy9PHT0SOGVa8s_fPYb8oVK_rY4ikrmtiyDD4QqBmOvUwsHKV9SLAoGTehwmQrJvps-kCGd7f3C6ZRGl7pgqB91dsfGy_X9v5b3nf7lMuyNCKSWNeApMU3vC12M0xOsYW6ftajpEAsso0FaIx0rwXgq2bUS2NTGUlidGtU7uIyy4BaiW4c9aJWSSuo8Wgcb_R-ZsIZtVmeEw571S4sSExT"/>
+<span class="absolute top-4 left-4 bg-secondary text-on-primary px-3 py-1 rounded-full text-label-sm">New</span>
+</div>
+<div class="p-5">
+<p class="text-on-surface-variant text-label-sm mb-1">Play &amp; Relax</p>
+<h5 class="font-headline-md text-base mb-2">천연 깃털 낚시 장난감</h5>
+<p class="text-primary font-bold text-lg mb-4">₩12,000</p>
+<button class="w-full bg-surface-container-high text-on-surface py-3 rounded-xl font-label-md flex items-center justify-center gap-2 hover:bg-primary-container hover:text-on-primary-container transition-colors active:scale-95">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+                            장바구니
+                        </button>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-white rounded-[24px] overflow-hidden custom-shadow group">
+<div class="aspect-square bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Professional grade feline dental care kit including a specialized brush and gel. The products are presented in a clean, clinical yet inviting way. Minimalist typography and a soft blue color scheme suggest medical efficacy and gentleness. High-key lighting highlights the sterile and premium nature of the kit." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0tlTzHBVIYUvwWGT0ya0cL1mr5t7_EvpgHlBj3PIrvPsXlyFJGnEhJfifFWg5MsNeLqSNF85W2RTfJ1SaLxRW43LWtdfu4q6KvsMu517KHLyss-pF01c5Ld16W8fOOjtlR9JKeox8-0wZeF2xELO2wwolvQiO_BYoGLkNeTtEpGaCTONEq9Pnk8l9D1uBm2wJe_vlH_e_4im68k61nnfvHWRthJzucj5aBeyzlMAGhn2YEExH4yN3_odghXM0UomkHoOE9MaZJ9QU"/>
+</div>
+<div class="p-5">
+<p class="text-on-surface-variant text-label-sm mb-1">Dental Guard</p>
+<h5 class="font-headline-md text-base mb-2">저자극 덴탈 케어 세트</h5>
+<p class="text-primary font-bold text-lg mb-4">₩22,000</p>
+<button class="w-full bg-surface-container-high text-on-surface py-3 rounded-xl font-label-md flex items-center justify-center gap-2 hover:bg-primary-container hover:text-on-primary-container transition-colors active:scale-95">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+                            장바구니
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary-container text-on-primary-container rounded-[32px] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 mb-stack-lg">
+<div>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-2">첫 방문 상담이 필요하신가요?</h3>
+<p class="font-body-md opacity-90">전문 수의사가 정성을 다해 고양이의 건강 상태를 확인해 드립니다.</p>
+</div>
+<button class="bg-white text-primary px-8 py-4 rounded-full font-label-md hover:shadow-xl transition-all whitespace-nowrap active:scale-95">예약하기</button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-2 px-4 h-20 bg-surface dark:bg-surface-container rounded-t-xl shadow-lg border-t-0">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant px-4 py-1 hover:bg-surface-variant dark:hover:bg-on-surface-variant/10 transition-colors active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-size: 24px;">home</span>
+<span class="font-label-sm text-label-sm mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-4 py-1 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-size: 24px; font-variation-settings: 'FILL' 1;">medical_services</span>
+<span class="font-label-sm text-label-sm mt-1">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant px-4 py-1 hover:bg-surface-variant dark:hover:bg-on-surface-variant/10 transition-colors active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-size: 24px;">calendar_month</span>
+<span class="font-label-sm text-label-sm mt-1">Booking</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant px-4 py-1 hover:bg-surface-variant dark:hover:bg-on-surface-variant/10 transition-colors active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-size: 24px;">person</span>
+<span class="font-label-sm text-label-sm mt-1">My Page</span>
+</a>
+</nav>
+<script>
+        // Simple entrance animation for elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body></html>
